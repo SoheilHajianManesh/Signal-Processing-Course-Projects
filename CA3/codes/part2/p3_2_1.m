@@ -1,0 +1,12 @@
+fs=8000;
+y=makeDigitSignal(2,1);
+y=[y,makeDigitSignal(1,3)];
+y=[y,makeDigitSignal(1,2)];
+y=[y,makeDigitSignal(1,1)];
+y=[y,makeDigitSignal(3,2)];
+y=[y,makeDigitSignal(3,1)];
+y=[y,makeDigitSignal(2,3)];
+y=[y,makeDigitSignal(2,2)];
+plot(y);
+sound(y,fs);
+audiowrite("y.wav",y,fs);
